@@ -28,8 +28,8 @@ jobs:
       - name: Run SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # For PR decoration
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}    # From SonarCloud
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}  # For PR decoration
+          SONAR_TOKEN: ${{ secrets.SONAR-TOKEN }}    # From SonarCloud
         with:
           args: >
             -Dsonar.organization=ramsnow42key
